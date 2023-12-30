@@ -24,6 +24,7 @@ public class Transaction {
     @ManyToOne
     @JoinColumn(name="sender_id")
     private User userSender;
+
     @ManyToOne
     @JoinColumn(name="receiver_id")
     private User userReceiver;
