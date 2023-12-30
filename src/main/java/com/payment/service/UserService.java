@@ -2,11 +2,14 @@ package com.payment.service;
 
 import com.payment.domain.user.User;
 import com.payment.domain.user.UserType;
+import com.payment.dto.UserDTO;
 import com.payment.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Service
 @AllArgsConstructor
@@ -31,5 +34,15 @@ public class UserService {
 
     public void saveUser (User user){
         this.repository.save(user);
+    }
+
+    public User createUser(UserDTO userDTO) {
+        User newUser = new User(userDTO);
+        this.saveUser(newUser);
+        return newUser;
+    }
+
+    public List<User> getAllUsers() {
+        return this.repository.findAll();
     }
 }
