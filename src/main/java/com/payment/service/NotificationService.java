@@ -1,14 +1,11 @@
 package com.payment.service;
 
 import com.payment.domain.user.User;
-import com.payment.service.dto.NotificationDTO;
+import com.payment.dto.NotificationDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
-import java.math.BigDecimal;
-import java.util.Map;
 
 @Service
 @AllArgsConstructor
