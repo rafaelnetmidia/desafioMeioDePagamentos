@@ -1,4 +1,4 @@
-package com.payment.service.dto;
+package com.payment.dto;
 
 public record NotificationDTO(String email, String message) {
 }
