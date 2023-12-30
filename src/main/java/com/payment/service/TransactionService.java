@@ -3,7 +3,7 @@ package com.payment.service;
 import com.payment.domain.transaction.Transaction;
 import com.payment.domain.user.User;
 import com.payment.repository.TransactionRepository;
-import com.payment.service.dto.TransactionDTO;
+import com.payment.dto.TransactionDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
